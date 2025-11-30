@@ -1,6 +1,5 @@
 'use strict';
 
-/* 4) Інтроспекція об’єкта iface -> [ [назва, кількість_аргументів], ... ] */
 function introspect(iface) {
   const res = [];
   for (const key in iface) {
@@ -16,5 +15,4 @@ const iface = {
   m3(x, y, z) { return [x, y, z]; },
   notAMethod: 123,
 };
-console.log(introspect(iface));
-// [ [ 'm1', 1 ], [ 'm2', 2 ], [ 'm3', 3 ] ]
+console.log(introspect(iface)); // [ [ 'm1', 1 ], [ 'm2', 2 ], [ 'm3', 3 ] ]

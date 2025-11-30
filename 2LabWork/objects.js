@@ -1,3 +1,5 @@
+'use strict';
+
 function fn() {
   const objConst = { name: 'Vladyslav' };
   let objLet = { name: 'Lebediuk' };

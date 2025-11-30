@@ -1,9 +1,5 @@
 'use strict';
 
-/* random(min, max)
-   random(max) => min = 0
-   Повертає ціле число в діапазоні [min, max] включно
-*/
 function random(min, max) {
   if (max === undefined) {
     max = min;
@@ -23,6 +19,6 @@ function generateKey(length, characters) {
   return key;
 };
 
-// тест
+// Перевірка
 const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
 console.log(generateKey(16, characters));
