@@ -124,10 +124,10 @@ console.log("max:", m);
 
 // Приклад для ages (очікувані значення як у прикладі: 54, 83, 79, 88)
 const persons = {
-  lenin: { born: 1870, died: 1924 },
-  mao: { born: 1893, died: 1976 },
-  gandhi: { born: 1869, died: 1948 },
-  hirohito: { born: 1901, died: 1989 },
+  Me: { born: 2007, died: 2025 }, // Якщо не здам сесію
+  Mao: { born: 1893, died: 1976 },
+  Gandhi: { born: 1869, died: 1948 },
+  Hirohito: { born: 1901, died: 1989 },
 };
 
 console.log("ages:", ages(persons));
