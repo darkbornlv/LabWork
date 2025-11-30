@@ -1,8 +1,7 @@
 'use strict';
 
-/**
- * 1) sum через цикл for
- */
+/* 1) sum через цикл for */
+
 function sumFor(...args) {
   // Сумуємо всі елементи масиву args за допомогою класичного for
   let total = 0;
@@ -14,9 +13,8 @@ function sumFor(...args) {
   return total;
 }
 
-/**
- * 2) sum через цикл for..of
- */
+/* 2) sum через цикл for..of */
+
 function sumForOf(...args) {
   // Цикл for..of проходить по значеннях елементів
   let total = 0;
@@ -28,9 +26,8 @@ function sumForOf(...args) {
   return total;
 }
 
-/**
- * 3) sum через цикл while
- */
+/* 3) sum через цикл while */
+
 function sumWhile(...args) {
   // Поки індекс менший за довжину, додаємо черговий елемент
   let total = 0;
@@ -44,9 +41,7 @@ function sumWhile(...args) {
   return total;
 }
 
-/**
- * 4) sum через цикл do..while
- */
+/* 4) sum через цикл do..while */
 function sumDoWhile(...args) {
   // Якщо аргументів немає — одразу повертаємо 0, щоб не зайти в do..while
   if (args.length === 0) return 0;
@@ -62,19 +57,16 @@ function sumDoWhile(...args) {
   return total;
 }
 
-/**
- * 5) sum через Array.prototype.reduce()
- */
+/* 5) sum через Array.prototype.reduce() */
+
 function sumReduce(...args) {
   // Reduce "згортає" масив у одне значення; початкове значення — 0
   return args.reduce((acc, x) => acc + x, 0);
 }
 
-/*Завдання 6*/
+/* Завдання 6* /
 
-/**
- * Повертає максимальний елемент з двовимірного масиву чисел (матриці).
- */
+/* Повертає максимальний елемент з двовимірного масиву чисел (матриці). */
 function max(matrix) {
   // Починаємо з -Infinity, щоб коректно працювати навіть з від’ємними числами
   let best = -Infinity;
@@ -88,13 +80,13 @@ function max(matrix) {
   return best;
 }
 
-/*Завдання 7*/
+/* Завдання 7 */
 
-/**
+/*
  * Приймає "довідник" персон виду:
  * { name: { born: YYYY, died: YYYY }, ... }
  * Повертає новий довідник з тривалістю життя:
- * { name: died - born, ... }
+ *  { name: died - born, ... }
  */
 function ages(persons) {
   // Створюємо новий "довідник" з віком (тривалістю життя)
